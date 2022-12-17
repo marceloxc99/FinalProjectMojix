@@ -21,20 +21,20 @@ public class CRUDListTest extends TestBase {
         listSection.newListNameTextBox.setText(listCreated);
         listSection.saveButton.click();
         Assertions.assertTrue(listSection.isListDisplayed(listCreated), "ERROR! List was not created");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
 
         listSection.getOptionsListLabel(listCreated).click();
         listSection.editListLabel.click();
         listSection.newListNameTextBox.selectAllandReplace(listUpdated);
         listSection.saveButton.click();
         Assertions.assertTrue(listSection.isListDisplayed(listUpdated), "ERROR! List was not created");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
 
         listSection.getOptionsListLabel(listUpdated).click();
         listSection.deleteListLabel.click();
         listSection.confirmDeleteList.click();
         listSection.getList(listUpdated).waitControlIsNotInThePage();
         Assertions.assertFalse(listSection.isListDisplayed(listUpdated),"ERROR! List was not deleted");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
     }
 }
