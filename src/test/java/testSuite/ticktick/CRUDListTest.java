@@ -15,11 +15,9 @@ public class CRUDListTest extends TestBase {
         loginPage.emailTextBox.setText(user);
         loginPage.passwordTextBox.setText(password);
         loginPage.signInButton.click();
-        System.out.println("passed login");
-        //test note
+        //Verification
 
         listSection.addNewListButton.click();
-        System.out.println("passed click add list button");
         listSection.newListNameTextBox.setText(listCreated);
         listSection.saveButton.click();
         Assertions.assertTrue(listSection.isListDisplayed(listCreated), "ERROR! List was not created");
