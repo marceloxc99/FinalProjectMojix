@@ -16,6 +16,7 @@ public class CRUDListTest extends TestBase {
         loginPage.passwordTextBox.setText(password);
         loginPage.signInButton.click();
         //verification
+        //test note
 
         listSection.addNewListButton.click();
         listSection.newListNameTextBox.setText(listCreated);
