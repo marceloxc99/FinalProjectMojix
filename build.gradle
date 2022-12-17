@@ -17,5 +17,9 @@ dependencies {
 }
 
 test {
+    print 'Automation Web UI Test are executing...'
     useJUnitPlatform()
+    testLogging {
+        events "passed","failed"
+    }
 }

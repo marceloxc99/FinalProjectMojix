@@ -19,5 +19,12 @@ services:
       - "4443:4443"
       - "4444:4444"
 
+  automation-web:
+    build: .
+    container_name: automation-web
+    depends_on:
+      - selenium-hub
+      - chrome
+
 # descarga e inicia :  sudo docker-compose -f docker-compose-auto.yml up -d
 # ver si inicio correctamente :  sudo docker-compose -f docker-compose-auto.yml  ps
