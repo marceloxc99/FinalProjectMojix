@@ -4,5 +4,6 @@ java -version
 echo "Executing Automation Test"
 cd /tmp/selenium
 echo "gradle cucumber"
-gradle cucumber
+chmod 777 gradlew
+./gradle cucumber
 echo "test completed"
