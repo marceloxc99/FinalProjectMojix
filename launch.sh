@@ -4,5 +4,5 @@ java -version
 echo "Executing Automation Test"
 cd /tmp/selenium
 echo "gradle clean test --tests CRUDListTest"
-gradle cucumber --publish
+gradle cucumber
 echo "test completed"
