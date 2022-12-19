@@ -4,6 +4,6 @@ java -version
 echo "Executing Automation Test"
 cd /tmp/selenium
 ls
-echo "./gradle cucumber"
-./gradle cucumber
-echo "test completed"
+echo "./gradlew cucumber"
+./gradlew cucumber
+echo "Test Completed"
