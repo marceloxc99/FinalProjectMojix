@@ -1,5 +1,6 @@
 package testSuite.ticktick;
 
+import io.cucumber.java.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import page.ticktick.ListSection;
@@ -15,14 +16,4 @@ public class TestBase {
 
     String user = GetProperties.getInstance().getUser();
     String password = GetProperties.getInstance().getPwd();
-
-    @BeforeEach
-    public void openBrowser(){
-        Session.getInstance().getBrowser().get(GetProperties.getInstance().getHost());
-    }
-
-    @AfterEach
-    public void closeBrowser(){
-        Session.getInstance().closeSession();
-    }
 }
