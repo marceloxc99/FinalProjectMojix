@@ -3,6 +3,6 @@ gradle -version
 java -version
 echo "Executing Automation Test"
 cd /tmp/selenium
-echo "gradle clean test --tests CRUDListTest"
-gradle cucumber
+echo "./gradle cucumber"
+./gradlew cucumber
 echo "test completed"
