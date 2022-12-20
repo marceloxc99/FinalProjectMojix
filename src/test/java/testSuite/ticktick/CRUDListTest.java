@@ -33,7 +33,7 @@ public class CRUDListTest extends TestBase {
         loginPage.emailTextBox.setText(user);
         loginPage.passwordTextBox.setText(password);
         loginPage.signInButton.click();
-        //Verification
+        Assertions.assertTrue(leftPanel.user.isControlDisplayed(), "ERROR! Login failed");
     }
 
     @When("User creates a new list")
